@@ -95,9 +95,9 @@ From the lane points, I fit my lane lines with a 2nd order polynomial using `np.
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I calculated the radius of curvature of the lane as following equations:
-![equation](https://latex.codecogs.com/gif.latex?f%28y%29%3DAy%5E%7B2%7D&plus;By&plus;C)
-![equation](https://latex.codecogs.com/gif.latex?f%28y%29%3DAy%5E%7B2%7D&plus;By&plus;C%24%24%20%24%24R_%7Bcurve%7D%3D%7B%281&plus;%282Ay&plus;B%29%5E%7B2%7D%29%5E%7B3%5Cover2%7D%5Cover%7C2A%7C%7D) 
+I calculated the radius of curvature of the lane as following equations: \
+![equation](https://latex.codecogs.com/gif.latex?f%28y%29%3DAy%5E%7B2%7D&plus;By&plus;C) \
+![equation](https://latex.codecogs.com/gif.latex?R_%7Bcurve%7D%3D%7B%281&plus;%282Ay&plus;B%29%5E%7B2%7D%29%5E%7B3%5Cover2%7D%5Cover%7C2A%7C%7D) 
 
 I averaged the value at the bottom of the image(`y=image.shape[0]`) of left and right lane. Then I got the position of the vehicle with respect to center as the difference between the center of ROI and the center of lane. The entire code is contained in the 7th code cell of the IPython notebook.
 
