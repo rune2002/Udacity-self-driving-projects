@@ -96,8 +96,9 @@ From the lane points, I fit my lane lines with a 2nd order polynomial using `np.
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
 I calculated the radius of curvature of the lane as following equations:
-$$f(y)=Ay^{2}+By+C$$
-$$R_{curve}={(1+(2Ay+B)^{2})^{3\over2}\over|2A|}$$
+  <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(y)=Ay^{2}+By+C" title="f(y)=Ay^{2}+By+C" />
+  <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{curve}={(1+(2Ay+B)^{2})^{3\over2}\over|2A|}" title="R_{curve}={(1+(2Ay+B)^{2})^{3\over2}\over|2A|}" />
+
 I averaged the value at the bottom of the image(`y=image.shape[0]`) of left and right lane. Then I got the position of the vehicle with respect to center as the difference between the center of ROI and the center of lane. The entire code is contained in the 7th code cell of the IPython notebook.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
