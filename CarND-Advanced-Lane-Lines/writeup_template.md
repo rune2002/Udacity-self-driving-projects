@@ -56,7 +56,7 @@ As I applied the distortion correction to chessboard images above, I also used `
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-I used a combination of color and gradient thresholds to generate a binary image. The code for this step is contained in the 4th code cell of the IPython notebook. Here's an example of my output for this step. 
+I used a combination of color and gradient thresholds to generate a binary image, since I found it very robust. To be specific, I took the absolute value of the derivative in x of grayscaled image, and S-channel of HLS colorspace. I chose the thresholds which give me the best result with test images. The code for this step is contained in the 4th code cell of the IPython notebook. Here's an example of my output for this step. 
 
 ![alt text][image3]
 
