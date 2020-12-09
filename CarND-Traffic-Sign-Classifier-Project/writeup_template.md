@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./data/train_distribution.png "Train"
-[image2]: ./data/valid_distribution.jpg "Valid"
+[image2]: ./data/valid_distribution.png "Valid"
 [image3]: ./data/test_distribution.png "Test"
 [image4]: ./data/original.png "Original"
 [image5]: ./data/gray.png "Gray"
@@ -54,7 +54,9 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 ![alt text][image1]
 ![alt text][image2]
 ![alt text][image3]
+
 Here is an example how the images look like:
+
 ![alt text][image4]
 
 ### Design and Test a Model Architecture
@@ -64,6 +66,7 @@ Here is an example how the images look like:
 As a first step, I decided to convert the images to grayscale because I can decrease the size of the model by using only one channel image as input as well as I worried that color information misguides learning, which means shape information matters.
 
 Here is the image above after grayscaling:
+
 ![alt text][image5]
 
 As a last step, I normalized the image data for the model to learn more efficiently.
